@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="TaskTribe">
+    <ActionItem ios.position="right" android.position="actionBar" 
+               text="Logout" tap="{{ onLogout }}" />
+  </ActionBar>
+  
+  <GridLayout>
+    <Label text="Welcome to TaskTribe!" class="text-2xl text-center" />
+  </GridLayout>
+</Page>

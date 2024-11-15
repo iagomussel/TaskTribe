@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="TaskTribe" />
+  
+  <StackLayout class="p-4">
+    <Image src="~/assets/logo.png" class="h-32 w-32 mb-8 self-center" />
+    
+    <TextField hint="Email" text="{{ email }}" keyboardType="email" class="input-field" />
+    <TextField hint="Password" text="{{ password }}" secure="true" class="input-field" />
+    
+    <Button text="Login" tap="{{ onLogin }}" class="btn-primary mb-4" />
+    <Button text="Sign in with Google" tap="{{ onGoogleLogin }}" class="btn-primary mb-4" />
+    
+    <Label text="Don't have an account?" class="text-center text-gray-600" />
+    <Button text="Register" tap="{{ onRegister }}" class="btn-primary" />
+  </StackLayout>
+</Page>
